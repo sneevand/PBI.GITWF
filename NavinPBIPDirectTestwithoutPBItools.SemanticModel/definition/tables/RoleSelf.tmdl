@@ -1,0 +1,79 @@
+table RoleSelf
+	lineageTag: 58aa4a12-d2d8-4845-81db-b2f77025dac7
+
+	column Role
+		dataType: string
+		lineageTag: 68f2f10d-21b8-46aa-91f1-7875edea5eb7
+		summarizeBy: none
+		sourceColumn: Role
+
+		annotation SummarizationSetBy = Automatic
+
+	column Onsite/Offshore
+		dataType: string
+		lineageTag: 4d5758b1-0950-4c94-8bd5-018d80c7a2a2
+		summarizeBy: none
+		sourceColumn: Onsite/Offshore
+
+		annotation SummarizationSetBy = Automatic
+
+	column POD
+		dataType: string
+		lineageTag: 39803354-ef02-4b36-a8a9-98b7090dcbe0
+		summarizeBy: none
+		sourceColumn: POD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dates
+		dataType: string
+		lineageTag: 7d3c4d2b-f25f-47fd-80a8-37f13aa48266
+		summarizeBy: none
+		sourceColumn: Dates
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hourly Rate'
+		dataType: int64
+		formatString: 0
+		lineageTag: adc53780-5dbd-4935-a58c-e90a0dacdcc1
+		summarizeBy: sum
+		sourceColumn: Hourly Rate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total estimated Hours'
+		dataType: int64
+		formatString: 0
+		lineageTag: b9801cad-dce3-4def-9b5c-8a6e64af8e46
+		summarizeBy: sum
+		sourceColumn: Total estimated Hours
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fees
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bd6afc1-a763-4c68-b29d-fa616eaed716
+		summarizeBy: sum
+		sourceColumn: Fees
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RoleSelf = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\ndondapati\Downloads\Resourcing.xlsx"), null, false),
+				    Sheet1_sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    FilterNullAndWhitespace = each List.Select(_, each _ <> null and (not (_ is text) or Text.Trim(_) <> "")),
+				    #"Removed Top Rows" = Table.Skip(Sheet1_sheet, each try List.IsEmpty(List.Skip(FilterNullAndWhitespace(Record.FieldValues(_)), 1)) otherwise false),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Top Rows", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Role", type text}, {"Onsite/Offshore", type text}, {"POD", type text}, {"Dates", type text}, {"Hourly Rate", Int64.Type}, {"Total estimated Hours", Int64.Type}, {"Fees", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

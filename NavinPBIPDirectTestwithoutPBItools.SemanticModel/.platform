@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "NavinPBIPDirectTestwithoutPBItools"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5492dcfa-ffb4-4bb3-84c5-e10de3b1d744"
+  }
+}

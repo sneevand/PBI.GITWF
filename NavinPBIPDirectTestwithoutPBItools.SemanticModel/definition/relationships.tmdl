@@ -1,0 +1,6 @@
+relationship b9ed2360-e6d8-d3c4-704b-58eda6a7efcd
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Role (Sheet1)'.Role
+	toColumn: RoleSelf.Role
+

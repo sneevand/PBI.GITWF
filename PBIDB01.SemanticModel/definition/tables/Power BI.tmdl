@@ -1,0 +1,284 @@
+table 'Power BI'
+	lineageTag: 5a397e81-4069-499b-9959-596256cfc410
+
+	column ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 021d3faf-76f3-4a00-841f-b2d33fce7a0c
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deloitte RICEFW ID'
+		dataType: string
+		lineageTag: 3a9842b6-1cdf-496b-93b2-afeec3101b7c
+		summarizeBy: none
+		sourceColumn: Deloitte RICEFW ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'WY RICEFW Title'
+		dataType: string
+		lineageTag: 9e8fb9ef-da3b-4293-9b56-66892046b946
+		summarizeBy: none
+		sourceColumn: WY RICEFW Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Internal Dates'
+		dataType: string
+		lineageTag: e278405a-fa33-4bc3-8185-7c8cff2457cd
+		summarizeBy: none
+		sourceColumn: Internal Dates
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dataset
+		dataType: string
+		lineageTag: b2c8a314-72be-4015-90cc-712091ba288d
+		summarizeBy: none
+		sourceColumn: Dataset
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Report ID'
+		dataType: string
+		lineageTag: 64bff1a8-0a63-4632-95f4-99c845304a8a
+		summarizeBy: none
+		sourceColumn: Report ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Report Name'
+		dataType: string
+		lineageTag: bd967a6c-4bd5-440b-ab01-b5b175d00cfa
+		summarizeBy: none
+		sourceColumn: Report Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Team Planned  TDS Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 205339f3-3d1e-450a-93f4-6bd2a359fa14
+		summarizeBy: none
+		sourceColumn: Team Planned  TDS Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'FDS Status'
+		dataType: string
+		lineageTag: 20bc5463-c715-4fd9-a7e3-3ec5e825362a
+		summarizeBy: none
+		sourceColumn: FDS Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS Owner'
+		dataType: string
+		lineageTag: ba61795d-324f-400f-8d61-5ec7479fba1f
+		summarizeBy: none
+		sourceColumn: TDS Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overall Status'
+		dataType: string
+		lineageTag: 53f8982f-0de1-436a-a36a-1e1a09358398
+		summarizeBy: none
+		sourceColumn: Overall Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ZMPlant Changes'
+		dataType: string
+		lineageTag: 0df08ec5-fbd0-4bc3-befe-d0936dd27f4e
+		summarizeBy: none
+		sourceColumn: ZMPlant Changes
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comments
+		dataType: string
+		lineageTag: 74a09075-2a75-4891-9e39-988c120042eb
+		summarizeBy: none
+		sourceColumn: Comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pending Items'
+		dataType: string
+		lineageTag: f56b853c-c2fd-4fdd-8d89-8b10ebf1b23c
+		summarizeBy: none
+		sourceColumn: Pending Items
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ADO FDS Status'
+		dataType: string
+		lineageTag: dcd2ae9a-20d9-4f25-8876-27e3d0e0df35
+		summarizeBy: none
+		sourceColumn: ADO FDS Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FDS Start Date (Planned)'
+		dataType: string
+		lineageTag: a03df955-d3aa-4484-8e24-94f6c33a612a
+		summarizeBy: none
+		sourceColumn: FDS Start Date (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FDS Submission End Date (Planned)'
+		dataType: string
+		lineageTag: 2d20e903-3fee-4860-ab73-dcd019807a1a
+		summarizeBy: none
+		sourceColumn: FDS Submission End Date (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FDS Approval'
+		dataType: string
+		lineageTag: 34f4a291-92b2-4a0a-bfdd-b175406b1169
+		summarizeBy: none
+		sourceColumn: FDS Approval
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS Start Date (Planned)'
+		dataType: string
+		lineageTag: bdb1fbf3-df8d-47fd-8b56-866018750ca0
+		summarizeBy: none
+		sourceColumn: TDS Start Date (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS EndDate (Planned)'
+		dataType: string
+		lineageTag: ef9e634f-8bdf-46a5-b6a3-26c24f9b0f34
+		summarizeBy: none
+		sourceColumn: TDS EndDate (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Actual TDS Start Date'
+		dataType: string
+		lineageTag: d0857f5b-1833-4b41-baaf-a20698ded267
+		summarizeBy: none
+		sourceColumn: Actual TDS Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Actual TDS  End Date'
+		dataType: string
+		lineageTag: 41374f77-afef-445e-8a8a-00dc1d071a02
+		summarizeBy: none
+		sourceColumn: Actual TDS  End Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS Approval Date (Planned)'
+		dataType: string
+		lineageTag: 3dbca438-7fca-4217-8031-800f82a1ef78
+		summarizeBy: none
+		sourceColumn: TDS Approval Date (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS Approval Date (Actual)'
+		dataType: string
+		lineageTag: b0992aca-4425-4530-9cb6-1be1ddd6a6b0
+		summarizeBy: none
+		sourceColumn: TDS Approval Date (Actual)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS Status'
+		dataType: string
+		lineageTag: added029-994f-4ea4-8a08-86681c5be245
+		summarizeBy: none
+		sourceColumn: TDS Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Build Start Date (Planned)'
+		dataType: string
+		lineageTag: 628f1b77-94c7-456e-befb-a545a227c254
+		summarizeBy: none
+		sourceColumn: Build Start Date (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Build  End Date (Planned)'
+		dataType: string
+		lineageTag: b1d37e60-0e61-49b5-a248-90de76e1dd34
+		summarizeBy: none
+		sourceColumn: Build  End Date (Planned)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Build Start Date(Actual)'
+		dataType: string
+		lineageTag: 785abe35-d661-4f72-a883-1181f8aedab9
+		summarizeBy: none
+		sourceColumn: Build Start Date(Actual)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Build End Date(Actual)'
+		dataType: string
+		lineageTag: c90451d0-3166-402f-ab6f-90e332f2fa49
+		summarizeBy: none
+		sourceColumn: Build End Date(Actual)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Build Status'
+		dataType: string
+		lineageTag: 62372ae8-0cce-4cd9-85cd-650713500e9e
+		summarizeBy: none
+		sourceColumn: Build Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FDS Link'
+		dataType: string
+		lineageTag: c7cabf0d-20d3-49e5-b4ab-d0786030ff17
+		summarizeBy: none
+		sourceColumn: FDS Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TDS Link'
+		dataType: string
+		lineageTag: fbace9ff-3b97-46d0-bbdc-604ae282c19a
+		summarizeBy: none
+		sourceColumn: TDS Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column33
+		dataType: string
+		lineageTag: 3422c1a5-07df-4816-b9e4-9ec7f980cb98
+		summarizeBy: none
+		sourceColumn: Column33
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Power BI' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\ndondapati\Downloads\WY P2S-TM Snowflake Status Tracker.xlsx"), null, true),
+				    #"Power BI_Sheet" = Source{[Item="Power BI",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Power BI_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ID", Int64.Type}, {"Deloitte #(lf)RICEFW ID", type text}, {"WY RICEFW Title", type text}, {"Internal Dates", type text}, {"Dataset", type text}, {"Report ID", type any}, {"Report Name", type any}, {"Team Planned  TDS Date", type date}, {"FDS Status", type text}, {"TDS Owner", type text}, {"Overall Status", type text}, {"ZMPlant Changes", type text}, {"Comments", type text}, {"Pending Items", type text}, {"ADO FDS Status", type any}, {"FDS Start Date (Planned)", type any}, {"FDS Submission End Date (Planned)", type any}, {"FDS Approval", type any}, {"TDS Start Date (Planned)", type any}, {"TDS EndDate (Planned)", type any}, {"Actual TDS Start Date", type any}, {"Actual TDS  End Date", type any}, {"TDS Approval Date (Planned)", type any}, {"TDS Approval Date (Actual)", type any}, {"TDS Status", type text}, {"Build Start Date (Planned)", type any}, {"Build  End Date (Planned)", type any}, {"Build Start Date(Actual)", type any}, {"Build End Date(Actual)", type any}, {"Build Status", type any}, {"FDS Link", type text}, {"TDS Link", type text}, {"Column33", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
