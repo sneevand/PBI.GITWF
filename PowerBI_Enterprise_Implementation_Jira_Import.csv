@@ -1,0 +1,25 @@
+Issue Type,Summary,Description,Epic Link,Components,Labels
+Epic,Power BI Enterprise Implementation,"Enterprise-scale Power BI platform setup with Databricks integration, governance, modeling, and dashboard delivery.",,Power BI,"enterprise,databricks"
+Story,Define BI Governance and Operating Model,"Set up governance roles, data ownership matrix, and content certification process.",Power BI Enterprise Implementation,Governance,governance
+Task,Finalize Power BI administration roles,,Power BI Enterprise Implementation,Governance,
+Task,Establish dataset/report certification criteria,,Power BI Enterprise Implementation,Governance,
+Task,"Define data privacy, DLP, and sensitivity labeling policy",,Power BI Enterprise Implementation,Governance,
+Story,Configure Power BI Tenant and Security,"Configure tenant settings, audit logging, access restrictions, and branding.",Power BI Enterprise Implementation,Platform,security
+Task,Enable audit logs and configure monitoring,,Power BI Enterprise Implementation,Platform,
+Task,Set workspace role mappings using Azure AD groups,,Power BI Enterprise Implementation,Platform,
+Task,"Configure DLP, RLS, and sensitivity labels",,Power BI Enterprise Implementation,Platform,
+Story,Integrate Power BI with Databricks,Set up secure and performant data connectivity between Power BI and Databricks.,Power BI Enterprise Implementation,Databricks,integration
+Task,Design star schema model based on Databricks tables,,Power BI Enterprise Implementation,Databricks,
+Task,Set up Databricks SQL Endpoint or Direct Lake connection,,Power BI Enterprise Implementation,Databricks,
+Task,Optimize queries using Delta caching and materialized views,,Power BI Enterprise Implementation,Databricks,
+Story,Build Certified Semantic Models,"Develop reusable shared datasets with RLS, KPIs, and performance optimization.",Power BI Enterprise Implementation,Modeling,semantic
+Task,Implement shared Date and Currency dimensions,,Power BI Enterprise Implementation,Modeling,
+Task,Create certified datasets with calculation groups,,Power BI Enterprise Implementation,Modeling,
+Task,Apply performance tuning and incremental refresh,,Power BI Enterprise Implementation,Modeling,
+Story,Develop Enterprise Dashboards,Design and build enterprise-grade dashboards using governance standards.,Power BI Enterprise Implementation,Dashboards,design
+Task,Create wireframes with stakeholders for executive KPIs,,Power BI Enterprise Implementation,Dashboards,
+Task,Apply DAX tuning and accessibility features,,Power BI Enterprise Implementation,Dashboards,
+Task,Validate visual consistency and certify reports,,Power BI Enterprise Implementation,Dashboards,
+Story,Monitor and Manage Power BI Assets,"Track usage, manage report lifecycle, and ensure performance and compliance.",Power BI Enterprise Implementation,Monitoring,ops
+Task,Build admin dashboard using Power BI REST API logs,,Power BI Enterprise Implementation,Monitoring,
+Task,Review performance metrics and stale reports monthly,,Power BI Enterprise Implementation,Monitoring,

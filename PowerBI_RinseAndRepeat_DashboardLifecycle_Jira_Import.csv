@@ -1,0 +1,30 @@
+Issue Type,Summary,Description,Epic Link,Components,Labels
+Epic,Power BI Dashboard Development Lifecycle,Reusable framework for iterative and standardized development of Power BI dashboards.,,Dashboards,"repeatable,template"
+Story,Requirements Gathering & Scope Definition,"Define the dashboard's business scope, KPIs, and source systems.",Power BI Dashboard Development Lifecycle,Dashboards,requirements
+Task,Conduct intake session with business SMEs,,Power BI Dashboard Development Lifecycle,Dashboards,
+Task,"Document dashboard purpose, audience, KPIs",,Power BI Dashboard Development Lifecycle,Dashboards,
+Task,Confirm source systems and scope complexity,,Power BI Dashboard Development Lifecycle,Dashboards,
+Story,Data Modeling and Preparation,Design semantic models for dashboard with reusability and security in mind.,Power BI Dashboard Development Lifecycle,Modeling,dataset
+Task,Design star schema and map measures,,Power BI Dashboard Development Lifecycle,Modeling,
+Task,Implement RLS and reusable logic,,Power BI Dashboard Development Lifecycle,Modeling,
+Task,Publish certified dataset,,Power BI Dashboard Development Lifecycle,Modeling,
+Story,Dashboard Design and UX Planning,Create layout and visual design according to enterprise guidelines.,Power BI Dashboard Development Lifecycle,Dashboards,design
+Task,Apply standard layout templates,,Power BI Dashboard Development Lifecycle,Dashboards,
+Task,Define visual layout and filters,,Power BI Dashboard Development Lifecycle,Dashboards,
+Task,Share wireframes with stakeholders,,Power BI Dashboard Development Lifecycle,Dashboards,
+Story,Dashboard Development,Develop and configure the Power BI dashboard visuals and logic.,Power BI Dashboard Development Lifecycle,Development,build
+Task,Build visuals and DAX logic,,Power BI Dashboard Development Lifecycle,Development,
+Task,"Implement drill-through, tooltips, bookmarks",,Power BI Dashboard Development Lifecycle,Development,
+Task,"Test filters, visuals, and refresh",,Power BI Dashboard Development Lifecycle,Development,
+Story,Testing and Stakeholder Review,Perform QA and collect stakeholder feedback before deployment.,Power BI Dashboard Development Lifecycle,QA,testing
+Task,Validate data accuracy against source,,Power BI Dashboard Development Lifecycle,QA,
+Task,Conduct performance testing,,Power BI Dashboard Development Lifecycle,QA,
+Task,Incorporate stakeholder feedback,,Power BI Dashboard Development Lifecycle,QA,
+Story,Deployment and Certification,Deploy dashboard to production and certify if applicable.,Power BI Dashboard Development Lifecycle,Deployment,certification
+Task,Promote report to Prod workspace,,Power BI Dashboard Development Lifecycle,Deployment,
+Task,Apply certification and update metadata,,Power BI Dashboard Development Lifecycle,Deployment,
+Task,Notify stakeholders of release,,Power BI Dashboard Development Lifecycle,Deployment,
+Story,Monitoring and Support,Track report usage and maintain performance over time.,Power BI Dashboard Development Lifecycle,Monitoring,operations
+Task,Monitor usage and refresh success,,Power BI Dashboard Development Lifecycle,Monitoring,
+Task,Decommission unused reports after 90 days,,Power BI Dashboard Development Lifecycle,Monitoring,
+Task,Run quarterly dashboard performance review,,Power BI Dashboard Development Lifecycle,Monitoring,
